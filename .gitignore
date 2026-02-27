@@ -1,1 +1,31 @@
-node_modules
+# Dependências
+node_modules/
+/vendor/
+
+# Arquivos de Build/Compilação
+build/
+dist/
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Configurações de IDE e Sistema
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+.DS_Store
+Thumbs.db
+
+# Logs e Bancos de Dados
+*.log
+*.sqlite
+.env
+.env.local
+
+# Arquivos de Cache
+.sass-cache/
+.eslintcache
