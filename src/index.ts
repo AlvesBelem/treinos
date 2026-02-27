@@ -29,7 +29,7 @@ await app.register(fastifySwagger, {
     servers: [
         {
           description: "localhost",
-          url: "http://localhost:3000"
+          url: "http://localhost:8080"
         }
     ],
   },
@@ -61,7 +61,7 @@ app.withTypeProvider<ZodTypeProvider>().route({
 
 // Run the server!
 try {
-  await app.listen({ port: Number(process.env.PORT) || 3000 });
+  await app.listen({ port: Number(process.env.PORT) || 8080 });
 } catch (err) {
   app.log.error(err);
   process.exit(1);
